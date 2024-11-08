@@ -1,0 +1,278 @@
+/* Universal Box Sizing and Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Body and Container Styling */
+body {
+    background: linear-gradient(145deg, #1e3c72, #2a5298); /* Deep Blue Gradient */
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(90deg, #003366, #ff0033); /* Blue to Red gradient */
+    color: white;
+    padding: 25px 50px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header:hover {
+    transform: translateY(-5px); /* Slight lifting effect */
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffcccb; /* Light Red hover effect */
+}
+
+/* Section Styling */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #ffffff; /* White background for section */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease-out;
+}
+
+section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+section#home h2 {
+    font-size: 2.8em;
+    color: #003366; /* Dark Blue for headings */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+section p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #555; /* Grayish color for paragraph */
+    margin-bottom: 20px;
+}
+
+/* Lost and Found Items Styling */
+#items {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#items > div {
+    background-color: #f2f2f2; /* Light Gray Background */
+    padding: 30px;
+    border-radius: 12px;
+    width: 48%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#items > div:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+}
+
+#items h2 {
+    color: #ff0033; /* Bright Red for item headers */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.item-list {
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+form label {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select,
+form textarea {
+    padding: 14px 20px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #f4f7fb;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #003366; /* Dark Blue focus state */
+    box-shadow: 0px 0px 8px rgba(0, 51, 102, 0.3);
+}
+
+form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+form button {
+    padding: 14px 20px;
+    background-color: #ff0033; /* Red button */
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d4002c; /* Darker Red */
+    transform: translateY(-3px); /* Subtle lift effect */
+}
+
+/* Notifications Section */
+#notifications h2 {
+    font-size: 1.8em;
+    color: #003366; /* Dark Blue */
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#notificationList {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+/* LinkedIn Profile Link */
+.linkedin-link {
+    display: inline-block;
+    margin: 30px 0;
+    color: #0077b5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.linkedin-link:hover {
+    color: #004a7c;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    header nav a {
+        font-size: 1.1em;
+        margin: 0 15px;
+    }
+
+    section#home h2 {
+        font-size: 2.5em;
+    }
+
+    section p {
+        font-size: 1.2em;
+    }
+
+    #items {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #items > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Styling for the item number */
+.item h4 {
+    font-size: 1.2em;
+    color: #ff0033;  /* Red */
+    margin-bottom: 10px;
+}
+
+/* Styling for item details */
+.item {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.item p {
+    margin: 5px 0;
+}
+
+.item p strong {
+    font-weight: bold;
+}

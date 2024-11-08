@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy and Sell Portal</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Buy and Sell Portal NITS</h1>
+        <nav>
+            <a href="index.html">Home</a> <!-- Link to Home page -->
+            <a href="lost-and-found.html">Lost and Found</a> <!-- Link to Lost and Found page -->
+            <a href="buy-sell.html">Buy and Sell</a> <!-- Link to Buy and Sell page -->
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Buy and Sell Portal</h2>
+        <p>Buy and sell items on campus and help others with their needs.</p>
+    </section>
+
+    <section id="report">
+        <h2 id="reportTitle">Post an Item for Sale</h2>
+        <form id="buySellForm">
+            <label for="itemType">Item Type:</label>
+            <select id="itemType" required>
+                <option value="sell">Sell</option>
+                <option value="buy">Buy</option>
+            </select>
+
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" required>
+
+            <label for="itemDescription">Description:</label>
+            <textarea id="itemDescription" required></textarea>
+
+            <label for="itemPrice">Price:</label>
+            <input type="text" id="itemPrice" required>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="text" id="contactNumber" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="items">
+        <h2>Items</h2>
+        <p><h1>Sell</h1></p>
+        <div id="sellItems"></div><br>
+        <h2></h2>
+        <p><h1>Buy</h1></p>
+        <div id="buyItems"></div><br>
+    </section>
+
+    <script src="buy-sell.js"></script> <!-- Buy and Sell JS -->
+</body>
+</html>

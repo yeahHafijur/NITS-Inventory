@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found Portal</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Lost and Found Portal NITS</h1>
+        <nav>
+            <a href="index.html">Home</a> <!-- Link to Home page -->
+            <a href="lost-and-found.html">Lost and Found</a> <!-- Link to Lost and Found page -->
+            <a href="buy-sell.html">Buy and Sell</a> <!-- Link to Buy and Sell page -->
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Lost and Found Portal</h2>
+        <p>Report lost or found items on campus and help others recover their belongings.</p>
+    </section>
+
+    <section id="report">
+        <h2 id="reportTitle">Report an Item</h2>
+        <form id="reportForm">
+            <label for="type">Item Type:</label>
+            <select id="type" required>
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+            </select>
+
+            <label for="name">Item Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" required></textarea>
+
+            <label for="contactNumber">Contact Number (optional):</label>
+            <input type="text" id="contactNumber">
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="items">
+        <h2>Items</h2>
+        <div id="lostItems"></div><br>
+        <div id="foundItems"></div>
+    </section>
+
+    <script src="lost-and-found.js"></script> <!-- Lost and Found JS -->
+</body>
+</html>
