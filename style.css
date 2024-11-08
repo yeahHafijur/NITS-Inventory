@@ -264,7 +264,7 @@ form button:hover {
 .item {
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #ffffff;
+    background-color: #f7e4e4;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
